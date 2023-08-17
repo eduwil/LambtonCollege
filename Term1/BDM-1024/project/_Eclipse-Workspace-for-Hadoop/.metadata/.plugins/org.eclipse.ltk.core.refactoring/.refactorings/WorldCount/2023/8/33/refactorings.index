@@ -1,0 +1,17 @@
+1692216740969	Rename resource 'WorldCount.jar'
+1692217682164	Rename resource 'Hadoop-Input'
+1692217711005	Rename resource 'Hadoop-Jar'
+1692217724115	Rename resource 'Hadoop-Input-01'
+1692217736457	Rename resource 'Hadoop-Output'
+1692220320673	Move 'WordCountInputTop' to 'WorldCount'
+1692222801502	Copy file
+1692222802643	Copy file
+1692222832927	Rename resource 'WordCountOutputTop'
+1692222841850	Rename resource 'WordCountOutputLow'
+1692225747783	Copy file
+1692225750650	Copy file
+1692226071282	Copy file
+1692226146934	Rename resource '2023-08_Final-Project-BDM-1024_WordCountOutputLow'
+1692226172368	Copy file
+1692232286731	Move 'WordCountOutputLow-BAD!' to 'WordCountOutput'
+1692232289528	Move 'WordCountOutputTop-BAD!' to 'WordCountOutput'
