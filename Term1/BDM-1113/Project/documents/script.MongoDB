@@ -1,0 +1,17 @@
+/**********************************/
+/*         create database        */
+/**********************************/
+use dbProject1113
+
+/**********************************/
+/*      create collections        */
+/**********************************/
+db.createCollection("users")
+db.createCollection("genres")
+db.createCollection("books")
+db.createCollection("user_books")
+
+
+
+
+

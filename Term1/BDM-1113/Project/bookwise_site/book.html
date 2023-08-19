@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book information</title>
+    <link rel = "stylesheet" href = "css/book.css">
+</head>
+<body style="background-image: url('img/image_user_books.png'); background-size: cover; background-attachment: fixed; background-color: #f0f0f0;">
+     <table width = "100%">
+        <tr><td align = "right"><a href="index.html" class = "linkLogoff">Log off</a><td></tr>
+    </table>
+    <main>
+        <section>
+            <form id = "frmBook" name = "frmBook" action = "user_books.html" method = "get">
+                <table>
+                    <tr>
+                        <td><label for="txtNickName" hidden>NickName:</label></td>
+                        <td><input type="text" name="txtNickName" id="txtNickName" hidden></td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtISBN">ISBN:</label></td>
+                        <td><input type="text"
+                                   name="txtISBN"
+                                   id="txtISBN"
+                                   placeholder="Enter book ISBN"
+                                   required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtName">Name:</label></td>
+                        <td><input type="text"
+                                   name="txtName"
+                                   id="txtName"
+                                   placeholder="Enter book name"
+                                   required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtYear">Year:</label></td>
+                        <td><input type="number"
+                                   name="txtYear"
+                                   id="txtYear"
+                                   min="1500"
+                                   max="2023"
+                                   step="1"
+                                   pattern="[a-z]{0,9}"
+                                   required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtAuthor1">Author:</label></td>
+                        <td><input type="text"
+                                   name="txtAuthor1"
+                                   id="txtAuthor1"
+                                   placeholder="Enter book author"
+                                   required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtAuthor2">Author:</label></td>
+                        <td><input type="text"
+                                   name="txtAuthor2"
+                                   id="txtAuthor2"
+                                   placeholder="Enter second author book">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtPages">Number of pages:</label></td>
+                        <td><input type="number"
+                                   name="txtPages"
+                                   id="txtPages"
+                                   min="1"
+                                   max="1000"
+                                   step="1"
+                                   pattern="[a-z]{0,9}"
+                                   required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Languages:</label></td>
+                        <td>
+                            <input type="checkbox" id="English" name="English" value="English">
+                            <label>English</label>
+                            <br>
+                            <input type="checkbox" id="Spanish" name="Spanish" value="Spanish">
+                            <label>Spanish</label>
+                            <br>
+                            <input type="checkbox" id="Portuguese" name="Portuguese" value="Portuguese">
+                            <label>Portuguese</label>
+                            <br>
+                            <input type="checkbox" id="French" name="French" value="French">
+                            <label>French</label>
+                            <br>
+                            <input type="checkbox" id="Italian" name="Italian" value="Italian">
+                            <label>Italian</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="Hindi" name="Hindi" value="Hindi">
+                            <label>Hindi</label>
+                            <br>
+                            <input type="checkbox" id="Japanese" name="Japanese" value="Japanese">
+                            <label>Japanese</label>
+                            <br>
+                            <input type="checkbox" id="Chinese" name="Chinese" value="Chinese">
+                            <label>Chinese</label>
+                            <br>
+                            <input type="checkbox" id="German" name="German" value="German">
+                            <label>German</label>
+                            <br>
+                            <input type="checkbox" id="Arabian" name="Arabian" value="Arabian">
+                            <label>Arabian</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtSynopsis">Synopsis:</label></td>
+                        <td colspan="2"><textarea name="txtSynopsis" id="txtSynopsis" cols="30" rows="10" maxlength="500"></textarea></td>
+                    </tr>
+                    <tr id = "lstGenres">
+                        <td><label>Genre:</label></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td><label>Related books:</label></td>
+                        <td>
+                            <table id = "lstRelated" border="1">
+                                <tr>
+                                    <td><strong>ISBN</strong></td>
+                                    <td><strong>Name</strong></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table align=center>
+                    <tr>
+                        <td><input type = "submit" value = "I'll read" onclick = "save_user_books(true)"></td>
+                        <td><input type = "submit" value = "Not now"   onclick = "save_user_books(false)"></td>
+                    </tr>
+                </table>
+          </form>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/book.js">
+    </script>
+</body>
+</html>

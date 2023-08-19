@@ -1,0 +1,61 @@
+/* styles.css */
+
+/* Body styling */
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+/* Main container styling */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 250px;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    background-color: #ded0d0ee;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Form label styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Form input styling */
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #0b1b2c;
+    border-radius: 3px;
+}
+
+/* Form submit button styling */
+input[type="submit"] {
+    background-color: #0b1b2c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'poppins', sans-serif;
+    font-size: 12px;
+}
+
+/* Form submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+

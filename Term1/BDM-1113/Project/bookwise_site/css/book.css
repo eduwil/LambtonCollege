@@ -1,0 +1,151 @@
+/* user_books.css */
+
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+/* Style for the link */
+.linkLogoff {
+    display: inline-block; /* Display as a block element */
+    margin-right: 10px; /* Add margin to move the link away from the content */
+    position: absolute;
+    top: 10px; /* Adjust the top distance as needed */
+    right: 10px; /* Adjust the right distance as needed */
+    background-color: rgb(184, 113, 22);
+    color: white;
+    text-decoration: none;
+    align-self: right;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	font-family: 'poppins', sans-serif;
+	font-size: 14px
+}
+
+/* Hover effect */
+.linkLogoff:hover {
+    background-color: #0056b3;
+    color: black;
+}
+
+/* Style for the link */
+
+.linkTable {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(184, 113, 22);
+    color: white;
+    text-decoration: none;
+    align-self: right;
+    padding: 12px 24px; /* Adjust padding for larger size */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'poppins', sans-serif;
+    font-size: 14px; /* Increase font size */
+    font-weight: bold; /* Add font weight for better readability */
+}
+
+.linkTable:hover {
+    background-color: #0056b3;
+    color: black;
+}
+
+h1#userTitle {
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    margin-top: 35px;
+    color: #333;
+}
+
+label {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main {
+    width: 90%;
+    margin: 5px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    height: 60px;
+}
+.chkLstInt {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 5px;
+}
+
+.chkLstInt:checked {
+    background-color: #209c15ee;
+    border: 1px solid grey;
+}
+
+.chkLstInt:checked::after {
+    content: '\2713'; /* Checkmark symbol */
+    color: white;
+    position: absolute;
+        top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+
+input[type="number"],
+select {
+    width: 80%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: rgb(184, 113, 22);
+    position: relative;
+    top: 0px; /* Adjust the top distance as needed */
+    right: -200px; /* Adjust the right distance as needed */
+    color: white;
+    box-align: center;
+    border: none;   
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'poppins', sans-serif;
+	font-size: 14px;
+   
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        width: 80%;
+    }
+}

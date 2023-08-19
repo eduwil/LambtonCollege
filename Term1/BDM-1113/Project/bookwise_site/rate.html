@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book rating</title>
+    <link rel = "stylesheet" href = "css/rate.css">
+</head>
+<body style="background-image: url('img/image_user.png'); background-size: cover; background-attachment: fixed; background-color: #f0f0f0;">
+
+    <table width = "100%">
+        <tr><td align = "right"><a href="index.html" class = "linkLogoff">Log off</a><td></tr>
+    </table>
+    <main>
+        <section>
+            <form id = "frmRate" name = "frmRate" action = "user_books.html" method = "get">
+                <table>
+                    <tr>
+                        <td><label for = "txtNickName" hidden>NickName:</label></td>
+                        <td><input type = "text" name="txtNickName" id="txtNickName" hidden></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "txtISBN">ISBN:</label></td>
+                        <td><input type = "text" name = "txtISBN" id = "txtISBN"></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "txtName">Name:</label></td>
+                        <td><input type = "text" name = "txtName" id = "txtName"></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "txtYear">Year:</label></td>
+                        <td><input type = "text" name = "txtYear" id = "txtYear"></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "txtAuthor1">Author:</label></td>
+                        <td><input type = "text" name = "txtAuthor1" id = "txtAuthor1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "txtAuthor2">Author:</label></td>
+                        <td><input type = "text" name = "txtAuthor2" id = "txtAuthor2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "txtPages">Number of pages:</label></td>
+                        <td><input type = "text" name = "txtPages" id = "txtPages"></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "txtSynopsis">Synopsis:</label></td>
+                        <td><textarea name = "txtSynopsis" id = "txtSynopsis" cols = "30" rows = "10" maxlength="100"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "txtRate">Rate:</label></td>
+                        <td><input type = "number"
+                                   name = "txtRate"
+                                   id = "txtRate"
+                                   min = 1
+                                   max = 5
+                                   step = 1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for = "txtComment">Comments:</label></td>
+                        <td><textarea name = "txtComment" id = "txtComment" cols = "30" rows = "10" maxlength="100"></textarea></td>
+                    </tr>
+                </table>
+                <table align = center>
+                    <tr>
+                        <td><input type = "submit" value = "Rate" onclick = "rate_book()"></td>
+                        <td><input type = "submit" value = "Not now"></td>
+                    </tr>
+                </table>
+          </form>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/rate.js">
+    </script>
+</body>
+</html>

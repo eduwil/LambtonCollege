@@ -1,0 +1,60 @@
+/**********************/
+/*        users       */
+/**********************/
+
+{nickname   : "steve1998",
+ birth_year : 1998,
+ genre      : "Male",
+ interests  : ["Sci-fi", "Drama"]}
+
+{nickname   : "Bicho",
+ birth_year : 1990,
+ genre      : "Male",
+ interests  : ["Sci-fi", "Drama"]}
+
+{nickname   : "MaElena",
+ birth_year : 2005,
+ genre      : "Female",
+ interests  : ["Sci-fi", "Comedy", "Drama"]}
+
+/**********************/
+/*       genres       */
+/**********************/
+
+{name:"Drama"}
+
+{name:"Comedy"}
+
+{name:"Sci-fi"}
+
+/**********************/
+/*        books       */
+/**********************/
+
+{ISBN      : "9780520946",
+ name      : "The Adventures of Tom Sawyer",
+ year      : 1876,
+ author    : ["Mark Twain"],
+ genre     : ["Comedy", "Drama"],
+ pages     : 185,
+ synopsis  : "The Adventures of Tom Sawyer is a novel about a boy growing up along the Mississippi River.",
+ languages : ["English", "Spanish"],
+ related   : [{ISBN : "9785757372",
+               name : "Adventures of Huckleberry Finn"},
+              {ISBN : "0393608441",
+               name : "Huck Out West"}]}
+
+/**********************/
+/*     user_books     */
+/**********************/
+
+{nickname     : "steve1998",
+ ISBN         : "9780520946",
+ name         : "The Adventures of Tom Sawyer",
+ view_date    : "2023-01-14",
+ reading_date : "2023-02-03",
+ read_date    : "2023-04-21",
+ state        : "Read",
+ rate         : 5,
+ comment      : "Excellent story...it's a must!"}
+

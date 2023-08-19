@@ -1,0 +1,92 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-image: url('img/image_user_books.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f0f0f0;
+}
+/* Style for the link */
+.linkLogoff {
+    display: inline-block; /* Display as a block element */
+    margin-right: 10px; /* Add margin to move the link away from the content */
+    position: absolute;
+    top: 10px; /* Adjust the top distance as needed */
+    right: 10px; /* Adjust the right distance as needed */
+    background-color: rgb(184, 113, 22);
+    color: white;
+    text-decoration: none;
+    align-self: right;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	font-family: 'poppins', sans-serif;
+	font-size: 14px
+}
+
+/* Hover effect */
+.linkLogoff:hover {
+    background-color: #0056b3;
+    color: black;
+}
+
+/* Centered title */
+h1#bookTitle {
+    text-align: center;
+    margin-top: 35px;
+    color: #333;
+}
+
+/* Form section styles */
+main {
+    width: 50%;
+    margin: 5px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Form label styles */
+label {
+    font-weight: bold;
+}
+
+/* Table styles */
+table {
+    height: 45px;
+    margin: 0; /* Remove margin to center the table horizontally */
+}
+input[type="submit"] {
+    background-color: rgb(184, 113, 22);
+    position: relative;
+    top: 0px; /* Adjust the top distance as needed */
+    right: -300px; /* Adjust the right distance as needed */
+    color: white;
+    box-align: center;
+    border: none;   
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'poppins', sans-serif;
+	font-size: 14px;
+   
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        width: 80%;
+    }
+}

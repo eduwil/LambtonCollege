@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User preferences</title>
+    <link rel = "stylesheet" href = "css/user.css">
+</head>
+<body style="background-image: url('img/image_user.png'); background-size: cover; background-attachment: fixed; background-color: #f0f0f0;">
+     <table width = "100%">
+        <tr><td><a href="index.html" class = "linkLogoff">Log off</a><td></tr>
+    </table>
+    
+    <h1 id="userTitle">Hi, </h1>
+    
+    <main>
+        <section>
+         <form id="frmUser" name="frmUser" action="user_books.html" method="get">
+                <table>
+                <tr>
+                    <td><label for="txtNickName" hidden></label></td>
+                    <td><input type="text" name="txtNickName" id="txtNickName" hidden></td>
+                    <!--<td><span ></span></td>-->
+                </tr>
+                <tr>
+                    <td><label for="txtYear">Birthday year:</label></td>
+                    <td><input type="number"
+                               name="txtYear"
+                               id="txtYear"
+                               min="1923"
+                               max="2023"
+                               step="1"
+                               pattern="[a-z]{0,9}"
+                               placeholder="Enter your birthday year"
+                               required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cboGenre">Genre:</label></td>
+                    <td>
+                        <select name="cboGenre" id="cboGenre">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr id = "lstInterest">
+                    <td><label>Interests:</label></td>
+                    <!--
+                    <td>
+                        <select name="lstInterest" id="lstInterest" multiple>
+                        <option value="EC">Ecuador</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label> I have a bike</label>
+                        <br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label> I have a car</label>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label> I have a boat</label>
+                        <br>
+                    </td>
+                -->
+                </tr>
+                </table>
+                <table align = "center">
+                <tr>
+                    <!--
+                    <td><button id="save" onclick="saveUser()">SAVE</button></td>
+                    <td><input type="reset"  value = "Reset"></td>
+                    -->
+                    <td><input type = "submit" value = "Continue" onclick = "saveUser()"></td>              
+                </tr>
+                </table>
+          </form>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/user.js">
+    </script>
+</body>
+</html>

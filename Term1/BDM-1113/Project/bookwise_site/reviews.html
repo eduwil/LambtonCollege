@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books' reviews</title>
+    <link rel = "stylesheet" href = "css/reviews.css">
+</head>
+<body style="background-image: url('img/image_user_books.png'); background-size: cover; background-attachment: fixed; background-color: #f0f0f0;">
+    <table width = "100%">
+        <tr><td align = "right"><a href="index.html" class = "linkLogoff">Log off</a><td></tr>
+    </table>
+    
+    <h1 id = "bookTitle"></h1>
+    
+    <main>
+        <section>
+            <form id = "frmReviews" name = "frmReviews" action = "user_books.html" method = "get">
+                <table>
+                    <tr>
+                        <td><label for="txtNickName" hidden>NickName:</label></td>
+                        <td><input type="text" name="txtNickName" id="txtNickName" hidden></td>
+                    </tr>
+                </table>
+                <div id = "bookReviews">
+                </div>
+                <table align = center>
+                    <tr>
+                        <td><input type = "submit" value = "Go back!"></td>
+                    </tr>
+                </table>
+          </form>
+        </section>
+    </main>
+    <script type = "text/javascript" src = "js/reviews.js">
+    </script>
+</body>
+</html>
