@@ -1,0 +1,13 @@
+html, body {
+  background-image: url("/static/img/bg.png");
+}
+
+.whiteText {
+	color : white;
+}
+
+.imageIni {
+	width : 120px;
+	height : 120px;
+	visibility : hidden;
+}
